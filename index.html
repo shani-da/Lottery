@@ -6,7 +6,7 @@
             body {
                 background-color: bisque;
                 color: #13125e;
-                left: 50px;
+                
             }
             script {
                 color: #183030;
@@ -33,6 +33,7 @@
             }
             h1 {
                 font-family: "Lucida Console", Courier, monospace;
+                 left: 50px;
             }
 
             input[name="guess"] {
@@ -74,6 +75,13 @@
                 top:570px;
             
             }
+             form[name="input_boxes"] {
+  
+                left: 50px;
+           
+            
+            }
+            
 
             input[type="button"] {
                 display: inline-block;
@@ -116,7 +124,7 @@
     <body onload="startgame()">
         <canvas id="thecanvas" width="1100" height="500"></canvas>
         <h1>lottery</h1>
-          <form>
+          <form name="input_boxes">
             <label for="guess" style="font-size: 20px;">Enter 7 numbers (1-40):</label><br>        
             <input type="number" id="guess1" name="guess" >
             <input type="number" id="guess2" name="guess" >
